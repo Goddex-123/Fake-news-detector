@@ -4,6 +4,9 @@ A master-level data science project that detects fake financial news, identifies
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here-brightgreen?style=for-the-badge)](https://fake-news-detector-sohambarate.streamlit.app/)
+
+> **🎯 Try it now!** Click the **Live Demo** badge above to use the app instantly!
 
 ## 🌟 Features
 
@@ -80,6 +83,7 @@ python src/data_generation/data_simulator.py
 ```
 
 This generates:
+
 - 1,000 news articles (350 fake, 650 real)
 - 5,000 social media posts with coordinated campaigns
 - Stock price data for 20 companies
@@ -109,36 +113,42 @@ The dashboard will open in your browser at `http://localhost:8501`
 ## 📊 Dashboard Pages
 
 ### 🏠 Overview
+
 - System statistics and key metrics
 - Recent fake news detections
 - Timeline of news activity
 - Top sources of misinformation
 
 ### 📰 News Feed
+
 - Filterable and sortable news articles
 - Classification badges and confidence scores
 - Detailed article information
 - Pagination for large datasets
 
 ### 📊 Sentiment Analysis
+
 - Sentiment timeline comparing fake vs real news
 - Distribution plots and statistical comparisons
 - Ticker-specific sentiment tracking
 - Anomaly detection in sentiment shifts
 
 ### 🕸️ Network Analysis
+
 - Interactive social network graph
 - Coordinated account identification
 - Community detection visualization
 - Suspicious group analysis
 
 ### 📈 Market Impact
+
 - Stock price vs fake news volume charts
 - Event study analysis showing abnormal returns
 - Correlation heatmaps
 - Statistical significance testing
 
 ### ⚠️ Alerts
+
 - High-confidence fake news detections
 - Coordinated campaign warnings
 - Market anomaly alerts
@@ -149,12 +159,14 @@ The dashboard will open in your browser at `http://localhost:8501`
 ### NLP Models
 
 **Baseline: TF-IDF + Logistic Regression**
+
 - 5,000 TF-IDF features with 1-3 gram analysis
 - Linguistic feature engineering (exclamation counts, sensational words, anonymity indicators)
 - ~85-87% accuracy
 - Fast inference, interpretable features
 
 **Deep Learning: DistilBERT**
+
 - Fine-tuned distilbert-base-uncased for sequence classification
 - Transfer learning with 3 epochs
 - ~93-95% accuracy
@@ -205,6 +217,7 @@ pytest tests/ --cov=src --cov-report=html
 ### Use Real Data
 
 Replace simulated data with:
+
 - **News**: NewsAPI, Financial Modeling Prep API
 - **Social Media**: Twitter API v2 (Academic Research track)
 - **Stock Prices**: Yahoo Finance API, Alpha Vantage
@@ -222,12 +235,14 @@ Replace simulated data with:
 **See [ETHICS.md](ETHICS.md) for full discussion.**
 
 **Key Limitations**:
+
 - False positives can harm legitimate sources
 - Model bias from training data
 - Cannot detect sophisticated manipulation
 - Requires continuous retraining
 
 **Responsible Use**:
+
 - Always have human verification before taking action
 - Transparent about classification reasoning
 - Protect privacy of social media users
